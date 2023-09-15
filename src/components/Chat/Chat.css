@@ -1,0 +1,125 @@
+.chat{
+    display: flex; 
+    flex-direction: column;
+    flex: 0.65;
+    /* border-left: 2px solid #46461f; */
+}
+
+.chatHeader{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    /* border-bottom: 1px solid #46461f; */
+}
+
+.chatHeaderInfo{
+    flex: 1;
+    padding-left: 20px;
+}
+
+.chatHeaderInfo > h3{
+    color: #c2c2c2;
+    /* margin-bottom: 3px; */
+    font-weight: 500;
+    font-size: medium;
+}
+
+.chatHeaderInfo > p{
+    color: #ffffff;
+    font-weight: 200;
+    font-size: medium;
+}
+
+/* .chatHeaderRight{
+
+} */
+
+.chatBody{
+    flex: 1;
+    background-image: url("https://mcdn.wallpapersafari.com/medium/61/64/3QBHDv.png");
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.chatMessage {
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.chatTime{
+    position: relative;
+    margin-left: 10px;
+    font-size: xx-small;
+    top: 7px;
+    font-weight: 500;
+}
+
+.chatName{
+    position: absolute;
+    top: -15px;
+    font-weight: 750;
+    font-size: xx-small;
+}
+
+.chatReciever{
+    margin-left: auto;
+    background-color: #dcf8c6;
+}
+
+.recieverName{
+    left: 370px;
+}
+
+.chatBody::-webkit-scrollbar {
+    width: 9px;
+}
+
+.chatBody::-webkit-scrollbar-track {
+    background-color: #4e4e4e;
+    /* border-radius: 100px; */
+}
+
+.chatBody::-webkit-scrollbar-thumb {
+    /* border-radius: 100px; */
+    background: #f7f7f7;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+}
+
+.chatFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+}
+
+.chatFooter > form {
+    flex: 1;
+    display: flex;
+}
+
+.chatFooter > form > input{
+    flex: 1;
+    outline-width: 0;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+
+.chatFooter > form > button{
+    display: none;
+}
+
+
+.chatFooter > .MuiSvgIcon-root{
+    padding: 10px;
+    color: gray;
+}
